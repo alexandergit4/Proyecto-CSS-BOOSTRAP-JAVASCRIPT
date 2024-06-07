@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url('../font/GothamMedium.ttf') format('truetype');
+	font-weight: normal;
+  }
+  
+  @font-face {
+	font-family: 'MyFont';
+	src: url('../font/Gotham-Black.otf') format('truetype');
+	font-weight: bold;
+  }
+  @font-face {
+	font-family: 'Fantasy';
+	src: url('../font/PoetsenOne-Regular.ttf') format('truetype');
+	font-weight: normal;
+  }
+  
+*{
+	font-family: 'MyFont';
+}
+.logo{
+	font-family: 'Fantasy';
+}
+#menu-bar,.icon-menu-1 {
+  display: none;
+}
+.contenedor {
+  position: relative;
+}
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.menu a {
+  display: block;
+  color: #fff !important;
+  background-color: #14213d !important;
+  text-decoration: none;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.menu a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  color: #fca311 !important;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 2px solid #fca311;
+}
+#menu-bar:checked ~ .menu {
+	transform: translateX(0%);
+
+}
+
+@media (max-width: 860px) {
+  .menu {
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    background-color: #14213d;
+    margin: 0;
+    padding: 0;
+    left: -10px;
+    right: -10px;	
+	height: 100vh;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+	justify-content: flex-start;
+  }
+  .menu-open {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+  .menu a {
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .icon-menu-1{
+	display: block;
+  }
+}

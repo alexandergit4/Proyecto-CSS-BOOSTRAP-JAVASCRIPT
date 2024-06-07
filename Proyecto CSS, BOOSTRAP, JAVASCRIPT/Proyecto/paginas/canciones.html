@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Canciones</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap - CSS -->
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fontello.css" />
+    <link rel="stylesheet" href="canciones.css" />
+    <link rel="stylesheet" href="../canciones/Canciones tarjetas.css" />
+    <!-- JS -->
+    <script src="../paginas/js/jquery.js"></script>
+    <script src="../paginas/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../javascript/boton.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css"
+    />
+  </head>
+
+  <!--========================================================== -->
+  <!-- Menu -->
+  <!--========================================================== -->
+
+  <body>
+    <header>
+      <div class="contenedor">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../../FrontFinal/img/sonido.png"
+            alt=""
+            width="50"
+            height="60"
+          />
+          <span class="fs-5 text-primary fw-bold"><h1 class="logo mx-4 txt-prim">OYE</h1></span>
+        </a>
+        <input type="checkbox" id="menu-bar" />
+        <label class="icon-menu-1 text-white" for="menu-bar"></label>
+        <nav class="menu">
+          <a href="../index.html">Inicio</a>
+          <a href="../paginas/canciones.html">Canciones</a>
+          <a href="./nosotros.html">Nosotros</a>
+          <a href="./contacto.html">Contacto</a>
+          <a href="../paginas/registro.html">Registro</a>
+          <a href="../paginas/sesion.html">Inicio de Sesion</a>
+        </nav>
+      </div>
+    </header>
+    <div class="contenedor">
+      <a class="navbar-brand" href="#">
+        <img
+          src="../FrontFinal/img/sonido.png"
+          alt=""
+          width="50"
+          height="60"
+        />
+        <span class="fs-5 text-primary fw-bold"><h1 class="logo mx-4 txt-prim">OYE</h1></span>
+      </a>
+      <input type="checkbox" id="menu-bar" />
+      <label class="icon-menu-1 text-white" for="menu-bar"></label>
+      <nav class="menu">
+        <a href="">Inicio</a>
+        <a href="paginas/canciones.html">Canciones</a>
+        <a id="viewAlerta">Contacto</a>
+        <a href="paginas/registro.html">Registro</a>
+        <a href="paginas/sesion.html">Inicio de Sesion</a>
+      </nav>
+    </div>
+
+    <!--========================================================== -->
+    <!-- Barra de busqueda  -->
+    <!--========================================================== -->
+
+    <div class="header-top">
+      <div class="navegacion">
+        <label for="buscador">Busque su canción favorita</label>
+        <input
+          type="search"
+          name="buscador"
+          placeholder="Buscar . . ."
+          id="inputBusqueda"
+        />
+      </div>
+    </div>
+    <div class="search" id="search">
+      <table class="search-table" id="searchTable">
+        <thead>
+          <tr>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="card">
+                <figure>
+                  <img src="../img/icon_2.svg" />
+                </figure>
+                <div class="contenido-card">
+                  <audio controls>
+                    <source src="../canciones/dos.mp3" type="audio/mpeg" />
+                  </audio>
+                  <h3>Son</h3>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <figure>
+                  <img src="../img/icon_3.svg" />
+                </figure>
+                <div class="contenido-card">
+                  <audio controls>
+                    <source src="../canciones/tres.mp3" type="audio/mpeg" />
+                  </audio>
+                  <h3>Moon</h3>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <figure>
+                  <img src="../img/icon_4.svg" />
+                </figure>
+                <div class="contenido-card">
+                  <audio controls>
+                    <source src="../canciones/cuatro.mp3" type="audio/mpeg" />
+                  </audio>
+                  <h3>Nebula</h3>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <figure>
+                  <img src="../img/icon_1.svg" />
+                </figure>
+                <div class="contenido-card">
+                  <audio controls>
+                    <source src="../canciones/uno.mp3" type="audio/mpeg" />
+                  </audio>
+                  <h3>Vive</h3>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <figure>
+                  <img src="../img/icon_1.svg" />
+                </figure>
+                <div class="contenido-card">
+                  <audio controls>
+                    <source src="../canciones/cinco.mp3" type="audio/mpeg" />
+                  </audio>
+                  <h3>Invierno</h3>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <figure>
+                  <img src="../img/icon_2.svg" />
+                </figure>
+                <div class="contenido-card">
+                  <audio controls>
+                    <source src="../canciones/seis.mp3" type="audio/mpeg" />
+                  </audio>
+                  <h3>planeta</h3>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <figure>
+                  <img src="../img/icon_3.svg" />
+                </figure>
+                <div class="contenido-card">
+                  <audio controls>
+                    <source src="../canciones/siete.mp3" type="audio/mpeg" />
+                  </audio>
+                  <h3>verde</h3>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <figure>
+                  <img src="../img/icon_4.svg" />
+                </figure>
+                <div class="contenido-card">
+                  <audio controls>
+                    <source src="../canciones/ocho.mp3" type="audio/mpeg" />
+                  </audio>
+                  <h3>azul</h3>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="card">
+                <figure>
+                  <img src="../img/icon_1.svg" />
+                </figure>
+                <div class="contenido-card">
+                  <audio controls>
+                    <source src="../canciones/nueve.mp3" type="audio/mpeg" />
+                  </audio>
+                  <h3>celeste</h3>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--========================================================== -->
+    <!-- Cards - Musica -->
+    <!--========================================================== -->
+
+    <div class="title-cards">
+      <h2>CANCIONES</h2>
+    </div>
+    <div class="container-card">
+      <div class="card">
+        <figure>
+          <img src="../img/icon_1.svg" />
+        </figure>
+        <div class="contenido-card">
+          <audio controls>
+            <source src="../canciones/uno.mp3" type="audio/mpeg" />
+          </audio>
+          <h3>Vive</h3>
+        </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="../img/icon_4.svg" />
+        </figure>
+        <div class="contenido-card">
+          <audio controls>
+            <source src="../canciones/dos.mp3" type="audio/mpeg" />
+          </audio>
+          <h3>Son</h3>
+        </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="../img/icon_1.svg" />
+        </figure>
+        <div class="contenido-card">
+          <audio controls>
+            <source src="../canciones/tres.mp3" type="audio/mpeg" />
+          </audio>
+          <h3>Moon</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-cards"></div>
+    <div class="container-card">
+      <div class="card">
+        <figure>
+          <img src="../img/icon_4.svg" />
+        </figure>
+        <div class="contenido-card">
+          <audio controls>
+            <source src="../canciones/cuatro.mp3" type="audio/mpeg" />
+          </audio>
+          <h3>Nebula</h3>
+        </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="../img/icon_1.svg" />
+        </figure>
+        <div class="contenido-card">
+          <audio controls>
+            <source src="../canciones/cinco.mp3" type="audio/mpeg" />
+          </audio>
+          <h3>Invierno</h3>
+        </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="../img/icon_4.svg" />
+        </figure>
+        <div class="contenido-card">
+          <audio controls>
+            <source src="../canciones/seis.mp3" type="audio/mpeg" />
+          </audio>
+          <h3>planeta</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="title-cards"></div>
+    <div class="container-card">
+      <div class="card">
+        <figure>
+          <img src="../img/icon_1.svg" />
+        </figure>
+        <div class="contenido-card">
+          <audio controls>
+            <source src="../canciones/siete.mp3" type="audio/mpeg" />
+          </audio>
+          <h3>verde</h3>
+        </div>
+      </div>
+      <div class="card">
+        <figure>
+          <img src="../img/icon_4.svg" />
+        </figure>
+        <div class="contenido-card">
+          <audio controls>
+            <source src="../canciones/ocho.mp3" type="audio/mpeg" />
+          </audio>
+          <h3>azul</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img src="../img/icon_1.svg" />
+        </figure>
+        <div class="contenido-card">
+          <audio id="player" controls>
+            <source src="../canciones/siete.mp3" type="audio/mpeg" />
+          </audio>
+          <h3>celeste</h3>
+        </div>
+      </div>
+    </div>
+
+    <!--========================================================== -->
+    <!-- Footer -->
+    <!--========================================================== -->
+
+    <footer>
+      <p>Escuha tu musica favorita en OYE &copy; 2024</p>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/buscador.js"></script>
+  </body>
+</html>

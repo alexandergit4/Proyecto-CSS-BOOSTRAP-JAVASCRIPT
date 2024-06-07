@@ -1,0 +1,241 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(menu.css);
+@import url(banner.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #e5e5e5;
+}
+.bg-primary {
+  background-color: #14213d !important;
+}
+header {
+  width: 100%;
+  background: #14213d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+h1 {
+  float: left;
+  color: white;
+  font-size: 40px;
+}
+
+.table {
+  width: 80%;
+  margin: 3rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.hed th {
+  color: #e7eb0c !important;
+  background-color: #14213d !important;
+}
+.table th,
+.table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.subt {
+  padding: 30px 0 5px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #14213d;
+}
+.table th {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: #15141a;
+}
+
+.table tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table tr:last-child {
+  border-bottom: none;
+}
+
+.table th,
+.table td {
+  border-right: 1px solid #ddd;
+}
+
+.table th:last-child,
+.table td:last-child {
+  border-right: none;
+}
+
+.table audio {
+  width: 100%;
+  height: 30px;
+}
+
+.copy {
+  font-size: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: #14213d;
+  color: white;
+}
+footer p {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin: 0;
+}
+
+footer .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+
+a {
+  color: #fff;
+}
+
+.featured-artists {
+  padding: 2rem;
+  text-align: center;
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.artist-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.artist-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.artist-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.artist-card p {
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.artist-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #14213d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.artist-link:hover {
+  background-color: #0c122a;
+}
+
+.testimonials {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card blockquote {
+  margin: 0;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-card cite {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #14213d;
+}
+
+@media (max-width: 768px) {
+  .artist-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
+    display: flex;
+  }
+
+  .menu a {
+    border: none !important;
+  }
+
+  header label {
+    display: none !important;
+  }
+}

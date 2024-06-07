@@ -1,0 +1,177 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(../css/menu.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background: #E5E5E5;
+	background-image: url('../img/background.jpg');
+}
+
+
+header {
+	width: 100%;
+	background: #14213D;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2% ;
+}
+
+h1 {
+	float: left;
+	color: white;
+	font-size: 40px;
+}
+
+
+.wrap{
+	margin: auto;
+	width: 90%;
+	max-width: 1000px;
+}
+
+.wrap p{
+	font-size: 18px;
+}
+
+header{
+	width: 100%;
+	position: fixed;
+}
+
+.header-top{
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: end;
+	background-color: #fca211ce;
+    backdrop-filter: blur(10px);
+	padding: 0 2%;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.navegacion{
+	padding:14px 0 10px 0;
+	color: #000;
+	display: flex;
+	align-items: center;
+	gap:1rem;
+}
+.navegacion input{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+
+input[type="search"]{
+	padding: 7px;
+	padding-right: 35px;
+	border: none;
+}
+
+.search{
+	width: 90%;
+	max-width: 1000px;
+	padding:0 10px;
+	padding-bottom: 5px;
+	overflow-x: hidden;
+	display: none;
+}
+
+.search-table{
+	width: 20%;
+}
+
+tbody tr td{
+	width: 100%;
+}
+
+tbody tr td a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #737373;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	padding-left: 20px;
+	border: 2px solid #fff;
+}
+
+tbody tr td a:hover{
+	border: 2px solid #378FD9;
+}
+
+.search::-webkit-scrollbar{ 
+	background:rgba(0,0,0,0);  
+}
+.mejs__container {
+	background: #a7b3d8;
+	border-radius: 10px;
+}
+
+.mejs__controls {
+	background: #7382c9;
+}
+
+.mejs__time-rail, .mejs__volume-rail {
+	background: #f3f4f7;
+}
+
+.mejs__time-current, .mejs__volume-current {
+	background: #4caf50;
+}
+
+.mejs__button {
+	color: #4caf50;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+	display: none;
+}
+
+footer {
+	width: 100%;
+	background-color: #14213D;
+	color: white;
+	
+}
+footer p {
+	text-align: center;
+	padding: 10px;
+	color:  white;
+	margin: 0;
+
+} 
+
+footer .contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 25px;
+}
+
